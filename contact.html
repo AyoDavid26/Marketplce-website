@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE MARKETPLCE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/mrkt_plce_icon-1.png" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <img src="images/mrkt_plce_logo-1.png" alt="mrkt_plce" class="logo">
+    <h1 class="title">Marketplce</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="tab-link active" onclick="showTab(event, 'home')">Home</a></li>
+        <li><a href="about.html" class="tab-link" onclick="showTab(event, 'about')">About</a></li>
+        <li><a href="contact.html" class="tab-link" onclick="showTab(event, 'contact')">Contact</a></li>
+        <li><a href="login.html" class="tab-link" onclick="showTab(event, 'Login')">Login/Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <h3>Our Contact Form</h3>
+    <form action="http://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Send Us A Message</legend>
+            <p>
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" placeholder="your name" id="Name" required autofocus autocomplete="on">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="your email" id="email" required>
+            </p>
+            <p>
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea name="message" id="message" placeholder="Type Your Message Here" cols="100" rows="30"></textarea>
+            </p>
+        </fieldset>
+        <button type="submit">SEND</button>
+        <button type="reset">RESET</button>
+
+    </form>
+    <p>Feel free to reach out to us using the following contact details:</p>
+<ul>
+    <li>Email: <a href="mailto:marketplce01@gmail.com">marketplce01@gmail.comm</a></li>
+    <li>Phone: <a href="tel:+2348024467112">+234 (802) 446-7112</a></li>
+    <li>Address: 123 Main Street, Victoria Island, Lagos, Nigeria</li>
+</ul>
+    </section>
+</section>
+</main>
+<footer class="footer">
+<p>&copy; 2024 THE MARKETPLCE. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -14,8 +14,8 @@
     <nav class="nav">
       <ul>
         <li><a href="#home" class="tab-link active" onclick="showTab(event, 'home')">Home</a></li>
-        <li><a href="#about" class="tab-link" onclick="showTab(event, 'about')">About</a></li>
-        <li><a href="#contact" class="tab-link" onclick="showTab(event, 'contact')">Contact</a></li>
+        <li><a href="about.html" class="tab-link" onclick="showTab(event, 'about')">About</a></li>
+        <li><a href="contact.html" class="tab-link" onclick="showTab(event, 'contact')">Contact</a></li>
         <li><a href="login.html" class="tab-link" onclick="showTab(event, 'Login')">Login/Signup</a></li>
       </ul>
     </nav>
@@ -112,8 +112,30 @@
         At MarketPlce, we are a team of passionate tech enthusiasts and savvy shoppers dedicated to bringing you the most advanced online shopping tool. Our mission is simple: to help you find the best deals effortlessly, saving you both time and money. We believe that smart shoppers deserve the best, and we are here to make that happen.
         </p>
     
-        <section id="contact" class="tab-content">
+        <section id="contact">
         <h2>Contact Us</h2>
+        <h3>Our Contact Form</h3>
+        <form action="http://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Send Us A Message</legend>
+                <p>
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" placeholder="your name" id="Name" required autofocus autocomplete="on">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="your email" id="email" required>
+                </p>
+                <p>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" placeholder="Type Your Message Here" cols="30" rows="10"></textarea>
+                </p>
+            </fieldset>
+            <button type="submit">SEND</button>
+            <button type="reset">RESET</button>
+
+        </form>
         <p>Feel free to reach out to us using the following contact details:</p>
     <ul>
         <li>Email: <a href="mailto:marketplce01@gmail.com">marketplce01@gmail.comm</a></li>
