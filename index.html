@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE MARKETPLCE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/mrkt_plce_icon-1.png" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <img src="images/mrkt_plce_logo-1.png" alt="mrkt_plce" class="logo">
+    <h1 class="title">Marketplce</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home" class="tab-link active" onclick="showTab(event, 'home')">Home</a></li>
+        <li><a href="#about" class="tab-link" onclick="showTab(event, 'about')">About</a></li>
+        <li><a href="#contact" class="tab-link" onclick="showTab(event, 'contact')">Contact</a></li>
+        <li><a href="login.html" class="tab-link" onclick="showTab(event, 'Login')">Login/Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="tab-content active">
+      <section class="search-section">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Search for products..." class="search-bar">
+          <button id="search-button" class="search-button">Search</button>
+        </form>
+        <div id="results" class="product-list"></div>
+        <div class="cta-section">
+          <a href="#" class="download-button">Get Marketplce now. It's free!</a>
+        </div>
+      </section>
+      <h2>Welcome to THE MARKETPLCE</h2>
+      <p>
+        <br>
+        We understand the frustration shoppers face with juggling multiple tabs and manually comparing prices across different websites. <br>That's why we created MarketPlce – to make your shopping journey seamless, efficient, and rewarding.<br>
+
+        <br> Elevate your shopping experience with MarketPlce – because smart shoppers deserve the best deals.
+        Discover the power of effortless shopping and start saving time and money today. With MarketPlce, you can say goodbye to the hassle of searching for the best deals. With user-friendly interface and real-time updates, you are sure that you always have access to the latest prices and product availability. Don't miss out on the opportunity to make informed purchasing decisions and secure the best deals online. Join us now and elevate your shopping experience with MarketPlce.
+      </p>
+      
+      <section id="benefits" class="benefits-section">
+        <h2>Why choose Marketplce</h2>
+        <div class="benefit-card">
+            <img class="lazy" data-src="templates/images/Benefit_1.png" alt="Benefit 1">
+            <ul><b>Instant Price Comparisons</b></ul>
+            <p>Automatically compare prices across top online retailers with a single click.</p>
+        </div>
+        <div class="benefit-card">
+            <img class="lazy" data-src="templates/images/Benefit_2.png" alt="Benefit 2">
+            <ul><b>Comprehensive Marketplace Coverage</b></ul>
+            <p>Access a vast array of price data from popular online stores, all in one place.</p>
+        </div>
+        <div class="benefit-card">
+            <img class="lazy" data-src="templates/images/Benefit_3.png" alt="Benefit 3">
+            <ul><b>User-Friendly Interface</b></ul>
+            <p>Our sleek and intuitive design ensures a smooth and straightforward price comparison process.</p>
+        </div>
+        <div class="benefit-card">
+            <img class="lazy" data-src="templates/images/Benefit_4.png" alt="Benefit 4">
+            <ul><b>Detailed Product Information</b></ul>
+            <p>View product specifications, customer reviews, and ratings, making informed purchasing decisions easier.</p>
+        </div>
+        <div class="benefit-card">
+          <img class="lazy" data-src="templates/images/Benefit_5.png" alt="Benefit 5">
+          <ul><b>Secure and Private</b></ul>
+          <p>We prioritize your privacy, ensuring your data is always protected.</p>
+      </div>
+      <section id="reviews" class="review-section"></section>
+      <h2>What Our Users say</h2>
+      <div id="reviewContainer" class="review-container">
+        <div class="review-card">
+            <h3>Customer Review 1</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu lacus ultricies, ac varius justo condimentum."</p>
+            <p><strong>Rating:</strong> ★★★★☆</p>
+        </div>
+        <div class="review-card">
+            <h3>Customer Review 2</h3>
+            <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+            <p><strong>Rating:</strong> ★★★★★</p>
+        </div>
+        <div class="review-card">
+            <h3>Customer Review 3</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu lacus ultricies, ac varius justo condimentum."</p>
+            <p><strong>Rating:</strong> ★★★★☆</p>
+        </div>
+        <div class="review-card">
+            <h3>Customer Review 4</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu lacus ultricies, ac varius justo condimentum."</p>
+            <p><strong>Rating:</strong> ★★★★☆</p>
+        </div>
+        <div class="review-card">
+            <h3>Customer Review 5</h3>
+            <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+            <p><strong>Rating:</strong> ★★★★★</p>
+        </div>
+        <div class="review-card">
+            <h3>Customer Review 6</h3>
+            <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+            <p><strong>Rating:</strong> ★★★★★</p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="tab-content">
+      <h2>About Us</h2>
+      <p>Information about the company...</p>
+    
+        <section id="contact" class="tab-content">
+        <h2>Contact Us</h2>
+        <p>Contact details...</p>
+        </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 THE MARKETPLCE. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
